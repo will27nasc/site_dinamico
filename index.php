@@ -24,6 +24,10 @@
             </nav>
 
             <nav class="mobile">
+                <div class="menu-hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -46,14 +50,15 @@
     </section>
 
     <section class="container descricao-autor">
-        <div class="flex mobile-column">
-            <div class="">
+        <div class="flex justify-content-between mobile-column gap-10">
+            <div class="text-descricao">
                 <h2>Fulano Ciclano</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis harum nulla vitae! Dicta voluptate fugit quisquam, neque vel placeat praesentium reiciendis, deserunt exercitationem quidem quas, excepturi at consequuntur distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aliquam nulla reprehenderit facilis vel excepturi possimus accusantium! Nam, ab reiciendis corporis ipsa aliquid impedit mollitia saepe non, aliquam, voluptatibus rerum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam magni corporis animi optio tempora commodi exercitationem soluta quos illo accusamus reiciendis atque quasi nesciunt cumque nobis, aspernatur qui quaerat sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui, possimus aliquam quo quos in minima, ipsa ratione iure neque magnam suscipit est enim dolore corrupti doloremque autem ex placeat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis harum nulla vitae! Dicta voluptate fugit quisquam, neque vel placeat praesentium reiciendis, deserunt exercitationem quidem quas, excepturi at consequuntur distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit aliquam nulla reprehenderit facilis vel excepturi possimus accusantium! Nam, ab reiciendis corporis ipsa aliquid impedit mollitia saepe non, aliquam, voluptatibus rerum?</p>
             </div>
 
-            <div class="flex center-x">
-                <img src="./img/perfil.jpg" alt="Minha foto de perfil" style="max-width: 500px; max-height: 650px">
+            <div class="img-perfil flex center-x center-y">
+                <img src="./img/perfil.jpg" alt="Minha foto de perfil">
             </div>
         </div>
     </section>
