@@ -34,8 +34,9 @@
         </div>
     </header>
 
-    <section class="container banner-principal">
-        <div class="">
+    <section class="flex center-x center-y banner-principal">
+        <div class="overlay"></div>
+        <div class="box-form">
             <form action="">
                 <h2>Qual o seu melhor email?</h2>
                 <input type="email" name="email" required>
