@@ -63,36 +63,36 @@
         </div>
     </section>
 
-    <section class="container especialidades">
+    <section class="especialidades">
         <h2 class="title">Especialidades</h2>
-        <div class="flex mobile-column">
+        <div class="container flex mobile-column gap-10">
             <div class="box-especialidades">
                 <h3><i class="fa-brands fa-html5"></i></h3>
-                <h3>HTML5</h3>
+                <h4>HTML5</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae temporibus quasi asperiores dignissimos aperiam possimus cum ex voluptatibus numquam nostrum id, optio minima, repellat enim sunt facere ad deserunt explicabo.</p>
             </div>
 
             <div class="box-especialidades">
                 <h3><i class="fa-brands fa-css3-alt"></i></h3>
-                <h3>CSS3</h3>
+                <h4>CSS3</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae temporibus quasi asperiores dignissimos aperiam possimus cum ex voluptatibus numquam nostrum id, optio minima, repellat enim sunt facere ad deserunt explicabo.</p>
             </div>
 
             <div class="box-especialidades">
                 <h3><i class="fa-brands fa-js"></i></h3>
-                <h3>Javascript</h3>
+                <h4>Javascript</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae temporibus quasi asperiores dignissimos aperiam possimus cum ex voluptatibus numquam nostrum id, optio minima, repellat enim sunt facere ad deserunt explicabo.</p>
             </div>
         </div>
     </section>
 
-    <section class="container extra">
-        <div class="flex mobile-column">
-            <div class="">
+    <section class="extras">
+        <div class="container flex mobile-column gap-10">
+            <div class="depoimentos-container">
                 <h2 class="title">Depoimentos</h2>
                 <div class="depoimentos-single">
                     <p class="depoimento-descricao">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempore cupiditate autem voluptate animi possimus quibusdam ipsa ratione! Atque perspiciatis iste officia in corporis, odio consequatur alias perferendis! Quo, architecto!
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempore cupiditate autem voluptate animi possimus quibusdam ipsa ratione! Atque perspiciatis iste officia in corporis, odio consequatur alias perferendis! Quo, architecto!"
                     </p>
 
                     <p class="nome-autor">Lorem ipsun</p>
@@ -100,22 +100,14 @@
 
                 <div class="depoimentos-single">
                     <p class="depoimento-descricao">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempore cupiditate autem voluptate animi possimus quibusdam ipsa ratione! Atque perspiciatis iste officia in corporis, odio consequatur alias perferendis! Quo, architecto!
-                    </p>
-
-                    <p class="nome-autor">Lorem ipsun</p>
-                </div>
-
-                <div class="depoimentos-single">
-                    <p class="depoimento-descricao">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempore cupiditate autem voluptate animi possimus quibusdam ipsa ratione! Atque perspiciatis iste officia in corporis, odio consequatur alias perferendis! Quo, architecto!
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempore cupiditate autem voluptate animi possimus quibusdam ipsa ratione! Atque perspiciatis iste officia in corporis, odio consequatur alias perferendis! Quo, architecto!"
                     </p>
 
                     <p class="nome-autor">Lorem ipsun</p>
                 </div>
             </div>
 
-            <div class="">
+            <div class="depoimentos-container">
                 <h2 class="title">Serviços</h2>
                 <div class="servicos">
                     <ul>

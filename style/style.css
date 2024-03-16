@@ -1,7 +1,12 @@
 :root{
     --color-header: #586f7c;
     --color-font-light: #ffffff;
+    --color-font-middle-light: #adb5bd;
+    --color-font-dark: #333533;
     --background-button: #e07a5f;
+    --background-especialidades: #e6e8e6;
+    --background-extras: #33658a;
+    --background-footer: #001f54;
 }
 
 *{
@@ -131,16 +136,16 @@ header{
 
 .img-perfil img{
     max-width: 400px;
-    max-height: 400px;
 }
 
 .descricao-autor{
-    padding: 30px 2%;
+    padding: 40px 2%;
 }
 
 .descricao-autor p{
     text-align: justify;
     padding: 7px 0;
+    color: var(--color-font-dark);
     font-size: 14px;
 }
 
@@ -151,6 +156,90 @@ header{
 
 .text-descricao {
     max-width: 766px;
+}
+
+.especialidades{
+    padding: 40px 2%;
+    background-color: var(--background-especialidades);
+}
+
+.especialidades .title{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-header);
+    text-align: center;
+}
+
+.box-especialidades{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.box-especialidades h3{
+    color: var(--color-header);
+    font-size: 45px;
+}
+
+.box-especialidades h4{
+    color: var(--color-font-middle-light);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.box-especialidades p{
+    color: var(--color-font-dark);
+    font-size: 14px;
+}
+
+.extras{
+    padding: 30px 0;
+    background-color: var(--background-extras);
+    color: var(--color-font-middle-light);
+    text-align: justify;
+}
+
+.depoimentos-single:nth-child(2n){
+    border-bottom: 0.7px solid var(--color-header);
+}
+
+.depoimentos-single:nth-child(4n){
+    padding-bottom: 50px;
+}
+
+.depoimentos-container{
+    min-height: 450px;
+}
+
+.depoimentos-container .title{
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.depoimentos-container p{
+    padding: 20px 0 10px;
+    font-size: 14px;
+}
+
+p.nome-autor{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.servicos{
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.servicos ul li{
+    padding-bottom: 12px;
+    list-style-position: inside;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--background-footer);
 }
 
 @media screen and (max-width: 600px){
