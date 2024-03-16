@@ -61,13 +61,14 @@
 header{
     padding: 20px 0;
     background-color: var(--color-header);
-    color: var(--color-font-light);
     font-weight: 300;
     text-transform: uppercase;
 }
 
-.logo{
+.logo a{
     font-size: 25px;
+    color: var(--color-font-light);
+    text-decoration: none;
 }
 
 .desktop ul{
@@ -273,6 +274,7 @@ footer {
     .menu-hamburger{
         font-size: 24px;
         cursor: pointer;
+        color: var(--color-font-light);
     }
 
     .mobile li{
