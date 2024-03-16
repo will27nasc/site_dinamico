@@ -126,5 +126,6 @@
             <p>Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="./js/jquery.js"></script>
 </body>
 </html>
