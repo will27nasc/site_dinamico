@@ -1,6 +1,12 @@
 :root{
     --color-header: #586f7c;
-    --color-font-header: #ffffff;
+    --color-font-light: #ffffff;
+    --color-font-middle-light: #adb5bd;
+    --color-font-dark: #333533;
+    --background-button: #e07a5f;
+    --background-especialidades: #e6e8e6;
+    --background-extras: #33658a;
+    --background-footer: #001f54;
 }
 
 *{
@@ -37,7 +43,19 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 766px){
+.justify-content-around{
+    justify-content: space-around;
+}
+
+.gap-3 {
+    gap: 3%;
+}
+
+.gap-10 {
+    gap: 10%;
+}
+
+@media screen and (max-width: 769px){
     .mobile-column{
         flex-direction: column;
     }
@@ -47,13 +65,14 @@
 header{
     padding: 20px 0;
     background-color: var(--color-header);
-    color: var(--color-font-header);
     font-weight: 300;
     text-transform: uppercase;
 }
 
-.logo{
+.logo a{
     font-size: 25px;
+    color: var(--color-font-light);
+    text-decoration: none;
 }
 
 .desktop ul{
@@ -63,8 +82,14 @@ header{
 }
 
 .desktop a{
+    transition: 1s;
     text-decoration: none;
-    color: var(--color-font-header);
+    color: var(--color-font-light);
+}
+
+.desktop a:hover{
+    color: var(--color-font-middle-light);
+    text-decoration: underline;
 }
 
 .mobile{
@@ -73,20 +98,280 @@ header{
 
 .banner-principal{
     width: 100%;
-    height: calc(100vh - 50px);
-    background-image: url('../img/capa.jpg');
-    background-size: cover;
+    height: calc(100vh - 74px);
     position: relative;
+}
+
+.banner-single{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
 }
 
 .overlay{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #22223b;
-    opacity: .3;
+    background-color: #0e0e1487;
+    z-index: 2;
+}
+
+.box-conteudo-principal{
+    height: 100%;
+    max-width: 500px;
+    flex-wrap: wrap;
+    z-index: 3;
+    justify-content: space-between;
 }
 
 .box-form{
-    z-index: 2;
+    width: 100%;
+    height: 20%;
+    padding: 0 2%;
+    align-self: center;
+}
+
+.box-form h2{
+    color: var(--color-font-light);
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.box-form input[type='email']{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 22px;
+    text-indent: 8px;
+    outline: 0;
+}
+
+.box-form input[type='submit']{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 22px;
+    background-color: var(--background-button);
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid #fb5607;
+}
+
+.bullets{
+    width: 100%;
+    align-self: flex-end;
+    padding: 6px 0;
+}
+
+.bullets span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--color-font-dark);
+}
+
+.bullets span.active-slider{
+    background-color: var(--color-font-light);
+}
+
+.img-perfil img{
+    max-width: 400px;
+}
+
+.descricao-autor{
+    padding: 40px 2%;
+}
+
+.descricao-autor p{
+    text-align: justify;
+    padding: 7px 0;
+    color: var(--color-font-dark);
+    font-size: 14px;
+}
+
+.descricao-autor h2{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.text-descricao {
+    max-width: 766px;
+}
+
+.especialidades{
+    padding: 40px 2%;
+    background-color: var(--background-especialidades);
+}
+
+.especialidades .title{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--color-header);
+    text-align: center;
+}
+
+.box-especialidades{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.box-especialidades h3{
+    color: var(--color-header);
+    font-size: 45px;
+}
+
+.box-especialidades h4{
+    color: var(--color-font-middle-light);
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.box-especialidades p{
+    color: var(--color-font-dark);
+    font-size: 14px;
+}
+
+.extras{
+    padding: 30px 0;
+    background-color: var(--background-extras);
+    color: var(--color-font-middle-light);
+    text-align: justify;
+}
+
+.depoimentos-single:nth-child(2n){
+    border-bottom: 0.7px solid var(--color-header);
+}
+
+.depoimentos-single:nth-child(4n){
+    padding-bottom: 50px;
+}
+
+.depoimentos-container{
+    min-height: 450px;
+}
+
+.depoimentos-container .title{
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.depoimentos-container p{
+    padding: 20px 0 10px;
+    font-size: 14px;
+}
+
+p.nome-autor{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.servicos{
+    padding: 30px 0;
+    font-size: 14px;
+}
+
+.servicos ul li{
+    padding-bottom: 12px;
+    list-style-position: inside;
+}
+
+.map{
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.contato-container{
+    padding: 40px 2px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato-container h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-font-dark);
+}
+
+.contato-container input[type='text']{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 22px;
+    text-indent: 8px;
+    outline: 0;
+}
+
+.contato-container textarea{
+    width: 100%;
+    height: 100px;
+    margin: 9px 0;
+    outline: 0;
+    resize: none;
+    text-indent: 5px;
+}
+
+.contato-container input[type='submit']{
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    background-color: var(--background-button);
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid #fb5607;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--background-footer);
+    padding: 30px 0;
+    color: var(--color-font-light);
+}
+
+@media screen and (max-width: 600px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .mobile ul{
+        width: 100%;
+        display: none;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        top: 74px;
+        z-index: 4;
+        background-color: var(--color-header);
+    }
+
+    .menu-hamburger{
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--color-font-light);
+    }
+
+    .mobile li{
+        font-size: 15px;
+        padding: 10px;
+        border-bottom: 1px solid #1b263b;
+    }
+
+    .mobile li a{
+        color: var(--color-font-light);
+        text-decoration: none;
+        display: block;
+    }
 }
