@@ -244,6 +244,54 @@ p.nome-autor{
     list-style-position: inside;
 }
 
+.map{
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.contato-container{
+    padding: 40px 2px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato-container h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color-font-dark);
+}
+
+.contato-container input[type='text']{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 22px;
+    text-indent: 8px;
+    outline: 0;
+}
+
+.contato-container textarea{
+    width: 100%;
+    height: 100px;
+    margin: 9px 0;
+    outline: 0;
+    resize: none;
+    text-indent: 5px;
+}
+
+.contato-container input[type='submit']{
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    background-color: var(--background-button);
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid #fb5607;
+}
+
 footer {
     text-align: center;
     background-color: var(--background-footer);

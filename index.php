@@ -12,14 +12,27 @@
     <title>Projeto 01</title>
 </head>
 <body>
+    <?php
+        $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+
+        switch ($url):
+            case 'depoimentos':
+                echo '<target target="depoimentos" />';
+                break;
+            
+            case 'servicos':
+                echo '<target target="servicos" />';
+                break;
+        endswitch;
+    ?>
     <header>
         <div class="container flex justify-content-between">
             <div class="logo"><a href="<?php echo INCLUDE_PATH; ?>">Logomarca</a></div>
             <nav class="desktop">
                 <ul class=" flex center-y">
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>">Sobre</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
@@ -31,8 +44,8 @@
 
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>">Sobre</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
@@ -40,12 +53,16 @@
     </header>
 
     <?php
-        $url = isset($_GET['url']) ? $_GET['url'] : 'home';
 
         if(file_exists("pages/$url.php")):
             include("pages/$url.php");
         else:
-            include("pages/404.php");
+            if($url != 'depoimentos' && $url != 'servicos'):
+                $pagina404 = true;
+                include("pages/404.php");
+            else:
+                include('pages/home.php');
+            endif;
         endif;
 
     ?>

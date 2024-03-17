@@ -48,7 +48,7 @@
 
     <section class="extras">
         <div class="container flex mobile-column gap-10">
-            <div class="depoimentos-container">
+            <div id="depoimentos"  class="depoimentos-container">
                 <h2 class="title">Depoimentos</h2>
                 <div class="depoimentos-single">
                     <p class="depoimento-descricao">
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="depoimentos-container">
+            <div id="servicos" class="depoimentos-container">
                 <h2 class="title">Serviços</h2>
                 <div class="servicos">
                     <ul>
