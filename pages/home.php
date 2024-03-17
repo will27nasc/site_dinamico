@@ -1,11 +1,18 @@
-<section class="flex center-x center-y banner-principal">
+    <section class="flex center-x center-y banner-principal column">
+        <div style="background-image: url('<?php echo INCLUDE_PATH; ?>img/capa-1.jpg');" class="banner-single"></div>
+        <div style="background-image: url('<?php echo INCLUDE_PATH; ?>img/capa-2.jpg');" class="banner-single"></div>
+        <div style="background-image: url('<?php echo INCLUDE_PATH; ?>img/capa-3.jpg');" class="banner-single"></div>
         <div class="overlay"></div>
-        <div class="box-form">
-            <form action="">
-                <h2>Qual o seu melhor email?</h2>
-                <input type="email" name="email" required>
-                <input type="submit" name="acao" value="Cadastrar">
-            </form>
+        <div class="box-conteudo-principal flex">
+            <div class="box-form">
+                <form action="">
+                    <h2>Qual o seu melhor email?</h2>
+                    <input type="email" name="email" required>
+                    <input type="submit" name="acao" value="Cadastrar">
+                </form>
+            </div>
+
+            <div class="bullets flex gap-3 center-x"></div>
         </div>
     </section>
 
