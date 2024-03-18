@@ -1,5 +1,5 @@
 $(function(){
-    carregamentoDinamico()
+    carregamentoDinamico();
     function carregamentoDinamico(){
         $('[realtime').click(function(){
             let pagina = $(this).attr('realtime');
@@ -8,6 +8,6 @@ $(function(){
 
             $('main').fadeIn(1000);
             return false;
-        })
-    }
-})
+        });
+    };
+});

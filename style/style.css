@@ -216,8 +216,10 @@ header{
 }
 
 .box-especialidades{
+    max-width: 400px;
     text-align: center;
     padding: 40px 0;
+    align-self: center;
 }
 
 .box-especialidades h3{
