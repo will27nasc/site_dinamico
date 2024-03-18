@@ -1,0 +1,1 @@
+let include_path = $('base').attr('base');
